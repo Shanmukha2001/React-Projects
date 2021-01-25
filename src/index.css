@@ -81,7 +81,7 @@ input, textarea {
     background-color: white;
     color: var(--maincolor);
     font-size: 2em;
-    padding: 5px 12px;
+    padding: 0.5px 12px;
     border-radius: 50%;
     bottom: -2vh;
     right: 10px;
