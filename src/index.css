@@ -1,0 +1,150 @@
+:root {
+    --wide: 400px;
+    --maincolor: rgb(75, 66, 66);
+}
+
+/* to make a sticky bottom footer */
+
+body {
+    position: relative;
+    min-height: 100vh;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    box-shadow: 0px -6px 10px rgb(230, 226, 226);
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 2px;
+}
+
+.head {
+    box-shadow: 0px 1px 10px rgb(230, 226, 226);
+    background-color: var(--maincolor);
+    color: rgb(255, 255, 255);
+    padding: 2vh;
+}
+
+.Note {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.in-Note {
+    position: relative;
+}
+
+input, textarea {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 0;
+    box-shadow: none;
+    border: none;
+    width: var(--wide);
+    outline: none;
+    padding: 5px 10px;
+    border-width: 2px;
+    color: rgba(13, 3, 3, 1);
+    /* border-style: solid; */
+    /* border-color: rgb(214, 208, 208); */
+    margin: 2px;
+}
+
+.Title {
+    padding-top: 10px;
+    margin-bottom: 6px;
+}
+
+.in-Note {
+    box-shadow: 1px 2px 13px 0px rgb(175, 174, 174);
+    border-radius: 8px;
+}
+
+.button {
+    position: absolute;
+    box-shadow: 1px 1px 1px 2px rgb(175, 174, 174);
+    background-color: white;
+    color: var(--maincolor);
+    font-size: 2em;
+    padding: 5px 12px;
+    border-radius: 50%;
+    bottom: -2vh;
+    right: 10px;
+    cursor: pointer;
+}
+
+.del {
+    position: absolute;
+    box-shadow: 0px 0px 12px 1px rgb(175, 174, 174);
+    background-color: white;
+    color: var(--maincolor);
+    font-size: 2em;
+    padding: 5px 15px;
+    border-radius: 50%;
+    border: none;
+    bottom: 1vh;
+    right: -70%;
+    width: 1px;
+    cursor: pointer;
+}
+
+.button:hover, .del:hover {
+    background-color: var(--maincolor);
+    color: whitesmoke;
+}
+
+.itemholder {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 0px 20px;
+    padding-bottom: 15vh;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    box-shadow: 1px 2px 13px 1px rgb(196, 191, 191);
+    padding: 10px;
+    margin: 2px 10px;
+    min-height: 25vh;
+}
+
+.item h3 {
+    padding: 10px 0px;
+}
+
+@media screen and (max-width:1200px) {
+    .itemholder {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .itemholder {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .itemholder {
+        grid-template-columns: 1fr;
+    }
+}

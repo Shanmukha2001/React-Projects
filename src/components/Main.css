@@ -1,0 +1,46 @@
+.brick{
+    background: skyblue;
+    padding: 1rem;
+    padding-top: 2rem;
+    margin: 1rem;
+    height: 100px;
+    width: 80px;
+}
+.arena{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    flex-flow: row wrap;
+}
+.btn{
+    background: transparent;
+    border: none;
+    font-size: 3rem;
+    color: white;
+}
+.btn:hover{
+    cursor: pointer;
+}
+.bottom-btn:hover{
+   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+.bottom-btn{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0 0.5rem;
+    margin: 2rem;
+    border-radius: 50%;
+    background: purple;
+    border: none;
+    outline: 0;
+}
+.bottom-btn:focus{
+    border: none;
+    outline: 0;
+    outline-color: transparent;
+}
+.btn:focus{
+    outline: 0;
+}

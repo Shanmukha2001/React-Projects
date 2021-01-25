@@ -1,0 +1,34 @@
+import React,{useState} from 'react';
+import './App.css';
+import Main from './components/Main'
+import List from './learning/List';
+import Add ,{Sub,Div,Mul} from './learning/Cal';
+import { FiChevronRight } from "react-icons/fi";
+import './index.css';
+
+let c = 0;
+
+// const litems = [ 1 ,2 ,3 ,4 ,5 ,[ 6, 7 ,8 ,9]];
+
+// const litem = litems.map((num) =>
+//                   <li key={num} id={num}>{num}</li>
+//                   );
+
+function App(){
+
+  const [count ,setCount] = useState(0);
+
+  const IncNum = () =>{
+    setCount(count +1);
+  };
+
+  return(
+    <>    
+      <h1>{count}</h1>
+      <button type="button" onClick={IncNum}>click me</button>
+    </>
+  );
+}
+
+
+export default App;
